@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></CanonicalizationMethod>
+        <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
+        <Reference Type="http://www.bankid.com/signature/v1.0.0/types" URI="#bidSignedData">
+            <Transforms>
+                <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></Transform>
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+            <DigestValue>arpk+fInqmP5JdLhqNQ1xLpacQxB27jzez/hkVWb4kk=</DigestValue>
+        </Reference>
+        <Reference URI="#bidKeyInfo">
+            <Transforms>
+                <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></Transform>
+            </Transforms>
+            <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+            <DigestValue>wQgkZBCW7GzWOKSEe0Xb78AhLdxbqPRoDbcHEatd968=</DigestValue>
+        </Reference>
+    </SignedInfo>
+    <SignatureValue>
+        rWgzPYeGn/rgwffhBJPcrBYzygMtzbL0kQY3tHJ/HnksxwT3qB2xmh5Y46TZ1c3UbyqB9P0Ytk3J/hv6vwADCfk4b/Ecch+ZcsfjZ5MIKRRf2K7LUc4TEaiID2FcNnf2LaQEUpGo/wVhjd04nnYnZcGw3yqA62IwdgFnxYcfuQQe7OPNnqIPOyU6rL64qOrBVG3Vom3+GY8vgCh1h9sK66sZT0DBNawR4ay3eVuMa0eWwj4QhryC84PYXNlfgo1K6+vTe3Zuw1Xnsok0lheW4zEzavbnoXpUq5C7aFrMK+4jNrIy2ILyjGLLTCo5mO8qzcaCKQe+dVi6qt9oMR+9aw==
+    </SignatureValue>
+    <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#" Id="bidKeyInfo">
+        <X509Data>
+            <X509Certificate>
+                MIIFdjCCA16gAwIBAgIIU4r4CjPkOqwwDQYJKoZIhvcNAQELBQAwfTELMAkGA1UEBhMCU0UxMDAuBgNVBAoMJ1NrYW5kaW5hdmlza2EgRW5za2lsZGEgQmFua2VuIEFCIChwdWJsKTETMBEGA1UEBRMKNTAyMDMyOTA4MTEnMCUGA1UEAwweU0VCIEN1c3RvbWVyIENBMyB2MSBmb3IgQmFua0lEMB4XDTIxMDExNTIzMDAwMFoXDTI0MDExNjIyNTk1OVowgdAxCzAJBgNVBAYTAlNFMTAwLgYDVQQKDCdTa2FuZGluYXZpc2thIEVuc2tpbGRhIEJhbmtlbiBBQiAocHVibCkxDjAMBgNVBAQMBVNZU0tBMRMwEQYDVQQqDApNQUxHT1JaQVRBMRUwEwYDVQQFEwwxOTcyMDgyMDA5NjkxODA2BgNVBCkMLygyMTAxMTYgMTAuMTMpIE1BTEdPUlpBVEEgU1lTS0EgLSBNb2JpbHQgQmFua0lEMRkwFwYDVQQDDBBNQUxHT1JaQVRBIFNZU0tBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8E0QWgRzp1FsRfwuvTHRWZuxiSN2yCTb2vnDH1L5xxvd98WYaFzNBkiYnLn7EAHsDps5A1xyMpz0kH2TfDrYJXVt7LOEsnt13FW+7mq2Slk7vubJkdte9hL2w3z3qqxZM+X95SKbs1+19bgdh+B/ZURHUjJz1qzCU7AIre7v8VsDZ28oK1rwrDJO5ZRK71PMMG7ZRpgl0cJkzD8Kdv3znGBHNW57k1k9AX9sc7jdT+49TruhfEVQPoBTOIkMLB1Obxk8c53y4CkA764ouAIX2jvpxMjqDI/ZfLTvSWiKzAO6m6FHJdN9B4yU+bhsyFGDqwJZLEYSFNICdwxrw9LQbwIDAQABo4GlMIGiMDsGCCsGAQUFBwEBBC8wLTArBggrBgEFBQcwAYYfaHR0cDovL29jc3AucmV2b2NhdGlvbnN0YXR1cy5zZTATBgNVHSAEDDAKMAgGBiqFcE4BBTAOBgNVHQ8BAf8EBAMCBkAwHwYDVR0jBBgwFoAUhywBjeCqvk2X7eMmfYDu8ljDljkwHQYDVR0OBBYEFMJumAG4qLoBdMd35GYooeI0EdH3MA0GCSqGSIb3DQEBCwUAA4ICAQAB0Gcr3CYMUB3D/Ujo++CAVm68YBGixCIr1y1EZ/PbuMZFv9vwk2UG/BUdePh6chWsdRjCK29KOjtEzolIRkY04U6UAhxtZy5tUdbUA9t5I+Jdfuh2QFcT2RbmTjhnh4hsB35HW9LnI1ma7xxQJGrEj+7THiFgOBLjOTf1MBx6yop1O5JzlJkoRMrPkWTTcAeapIAOD8v0R7W5Wr8BhbQgZ25gGsaJQcx+GkpXIZgUT/IGEbCAzPIwY63angrR5Pb37bLDcMbXrkQo8Wtjb6HA1da7O0FPzTFG4+WDXRc0COBQ5iVNrSzerde3Meq99WbEcGh+Yd4GeKR77Y0SgDOds19izFJ8nG8KnO4quO81+TbmnwmPT3/xvoSSJjCkqUGH6QA3EqU5vGM0YcG/72QdRiZGAxI9ckdu6hUyRlKOrKO/RsWZIEtr2/Ozcrmc0knpdly83v/1qeaY9jrLRJH6reeZR5grzc03fBA9V+5If64AI7GBX86ZJaW0/oSCoeCMD1assbA+ETsAS3qP5AZVQHUvIl6XNivdoDIp2dHVxi8DrI08EjNdNT0alE21i/KAG8tsm8xXeT5+vYeaKs9nBcad3+7oAMIDEa3Ti5tRfqj3acYaIq5G24+RWmDh+zNhN6fyZapgRNpVwKE82vuqNzqCAy8XmdA9ypT6Xco/4Q==
+            </X509Certificate>
+            <X509Certificate>
+                MIIF6jCCA9KgAwIBAgIIXRFNBHoA9UkwDQYJKoZIhvcNAQENBQAwczELMAkGA1UEBhMCU0UxMDAuBgNVBAoMJ1NrYW5kaW5hdmlza2EgRW5za2lsZGEgQmFua2VuIEFCIChwdWJsKTETMBEGA1UEBRMKNTAyMDMyOTA4MTEdMBsGA1UEAwwUU0VCIENBIHYxIGZvciBCYW5rSUQwHhcNMTIwNjA0MTIxNTM2WhcNMzQxMjAxMTIxNTM2WjB9MQswCQYDVQQGEwJTRTEwMC4GA1UECgwnU2thbmRpbmF2aXNrYSBFbnNraWxkYSBCYW5rZW4gQUIgKHB1YmwpMRMwEQYDVQQFEwo1MDIwMzI5MDgxMScwJQYDVQQDDB5TRUIgQ3VzdG9tZXIgQ0EzIHYxIGZvciBCYW5rSUQwggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDCEOKe/asHrD8e4kzj7Sjf6CnFUoIjL98zmX4/0wASLRFvu89bJTl09d2n/dsHiXJWqHWD6jD/4ldYSOxGqUokULIc5yhGiJO9IU8BW2LTtQAxGVLU63yZgg8IdQP+EdBbVo7hQG/AmKfarCK/159bDOzyYEPXgqzbgVb+fo+EYh9jBS9xLepcs5zIYlgMDprcBTsuvGXdhHzwExtquUFaVYr7PZYa8seny4iUkIzuLQvaxl8M3pBlStFKqUzCS7t1F3OzCZX87/pAXWWEEA6uUlbQIn2mVFM/egw6sVUdhwzopPSTch7Wl/LyvDg94HNwo7SjQnBwWFimfvXiF5ORwZIe6ruuiFg1zPF75JsktGOAjiS2ovcLbBsGVmIyfjISxvYccwir2PcFS+TWuf5AMiln4ei/0zHOrmL4ZDJbXWvITjacKQ5tMCI/MYlkgAK10WJXc5JbXbWzaQdYIBEZ5luHIsuiSf1nXTMZCL0RhXk8m4YSGSDOnG58es34XvGHuxAkTk5blPlTbIBPEAZ5CHI19n4IrDpvaGADD9EJmXvnKG1/QDFmR5cI4sYILFiDApiF/ge3EYg7VqX4ox/NTsn9qL/ijkBTFJvJOiu+kOLSb4PeZmsANSwdbHo6pwRdbEB7ad+oRbb3NqRifhs2j9TqvR07bDrXNdUKkL0CMQIDAQABo3gwdjAdBgNVHQ4EFgQUhywBjeCqvk2X7eMmfYDu8ljDljkwDwYDVR0TAQH/BAUwAwEB/zAfBgNVHSMEGDAWgBTfDMAH38OupdZ6y4QKL7u6PDXMUzATBgNVHSAEDDAKMAgGBiqFcE4BBTAOBgNVHQ8BAf8EBAMCAQYwDQYJKoZIhvcNAQENBQADggIBABNnbTJDJ4hf3KSPldiYsyTWHP/Elaamzf9tnXGsZAz+M4oLf1uk1XZVZR5GSiX7qIYTe5uIDN6xx+JI/8cFYqbyM3c2k5B82VI83qrIw3YXQEo1C2oPvejESJoXJgq2w3VMzOR11tTTfBQPTDnBTeDlkXt+uPqyoHy7DxJ6KMj8Z/NX2Q6+4vSYBwkKNXDLV/0pOn9Ev2ORP5q9Me29g8pqWyVgHWO7fhUImE75TvoTl0p5xr4HhUI0eBwqBYshCV7HbyEOc0lVt33FuVnIiTCYMQA0fMwc3KV8H4Fid8zxnQIVE0RtRe7EjF9vdNRBFmCOkmAvWplphzRhNHCOFceSFBATxlZbI0MorH2+OfwuxqmIbHuZBZfn/MBdzaw2VltAg2IU8dfamkP3ZxjY7i0jcBN8haq1K9HJGcnv2joB5vQXcZptUciDLFSHhGhoHVFV1FJfAZQC/1TA9F/qe33JaQc6t8RK19tdpT/VdhqkcG/Lk2Oh5Zp5kBzLsZEfXO3cIgAjIPm1uvf7zpPN9fUowYLVK2bUnLO4pFChy7+213Gn63s43dN/ubuKaCl/Nu2VZjfZFqWrbNI6g1bZqJ1mIE5AcRlGRN9R2kWU5rnORPFkZapx/dEPVAF5Cu7xritxQSlpbPqLjAfaw4ZcM53DEF7gf/wGALdjGwwf6lf0
+            </X509Certificate>
+            <X509Certificate>
+                MIIF0DCCA7igAwIBAgIIO/VkFE29dqwwDQYJKoZIhvcNAQENBQAwYzEkMCIGA1UECgwbRmluYW5zaWVsbCBJRC1UZWtuaWsgQklEIEFCMR8wHQYDVQQLDBZCYW5rSUQgTWVtYmVyIEJhbmtzIENBMRowGAYDVQQDDBFCYW5rSUQgUm9vdCBDQSB2MTAeFw0xMjA2MDQxMTM2MjdaFw0zNDEyMzExMTM2MjdaMHMxCzAJBgNVBAYTAlNFMTAwLgYDVQQKDCdTa2FuZGluYXZpc2thIEVuc2tpbGRhIEJhbmtlbiBBQiAocHVibCkxEzARBgNVBAUTCjUwMjAzMjkwODExHTAbBgNVBAMMFFNFQiBDQSB2MSBmb3IgQmFua0lEMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAm/zJeRPxFnQjyh2C7GoZCIjvnk/V3Paockj2imZ0pHpcjyc0AfM+AZDYX6PAnqlPb9sh31W3xfsXScWqcnKEbEbgztZL65quacwgbAaSZAN4ljLZfK4hQu/cZDZPBPXRRz49EgAYRx3J2c0HkMpTg6wvg2pi99PeEi608uPqzSOJT3UOEZXdJjPdya4Ql03R2xl3q2pmERpk8tVJLyn1UJRN9mNpL692wLVVIy4MiT4ApQsVqmi2JupVyVYIh1IVxUtjb1R0mmgPpUmuNyMg2lgNZvd5D37xZR5+m8ZFnJEqeqxce5AFmabxqewJQP/dSdVXOMja2XrYb3BwVArqfvHtTFKUxrQlaExItNRsmUH4764owlQomfStifOx+p/iMOkkmvRV+GDMdb+DslMP9UxSwwrozmbIMq0OfoUxlPQop0h/UXUN91i51jWxNMcZkwEN5/lAiD9TpHvQwmf4c/zFd4r6/LsFYqdwdYVmFnppZFA04h2qsHGjKvxsfvaA4nso/eOPQckvwaQDVOZ3TWw83AllycAufKqSJ3P2+CwcRdjF2HrLRYEmGYaN9LZE1Gw/8/l7EA1NLZQbfUJ0jesa5m0oDXlnajjq2uJ1ZkYwXlk+SZaP222eYzW8kHHW1h1ELxP3y5o3skMkx1KrKmanxnPrfeN7N5lKoI5lzw8CAwEAAaN4MHYwHQYDVR0OBBYEFN8MwAffw66l1nrLhAovu7o8NcxTMA8GA1UdEwEB/wQFMAMBAf8wHwYDVR0jBBgwFoAUZ4q6supIHHr1O2g3J3IG65Fjy1MwEwYDVR0gBAwwCjAIBgYqhXBOAQEwDgYDVR0PAQH/BAQDAgEGMA0GCSqGSIb3DQEBDQUAA4ICAQBT1YhWadaDi3PYPCKw8AHdd/cTLoOfxatW0HRtiLZOowMQOmQ4sKvFMEVnyH+PojRSr5XyyHAKeP6SE1HUZPgQBkcqgmhmS68jHqY8+JAm1d07cretMjBNbEJ0iBvxClJWVfC9ZSOjCNWMtvuPFYu0O9VEhXmJkd6Wlaw0zeHpxYb/Cex+C4z9/4OcdRdDMQZRfnNHVQF50POq+o0DMiHoTeZ8LqLQnW7SZycqY5h3XZjhUgRrxGdchqzIMLbrGgA2dCQDQdHsvtoRUraFKq+XaXSDAl7Hr/HjVWyYhjrs/ad+YqjBdZ51zxf5JbgOkhSmuC9QwCn+ARCURCo2CC5KTstDuH8UMZCiX0lHsKO/YTU7T0M/8Kl/62JT6BH16u4mOC+kAxuAVqG4dq3cBpVq3YoENdu82taexhmMpFa7DDbRzscJ6nFZvymZMdwJctpxKj4oSgj92lyRFyTmoo9I6K4qWxKVel7QeF0HJoYpSIiSEYud8Pn+4kWe2WzbgZeOVRf/pj8i7COXpjDRl2yTn7x8AD79w+AXQN98JBidPX8vGgP6zru+pvJM7/x2suK/+VhBAVCpTfU2vN6phiVO+udPskcGcG0bYK2Eg19txgCpVQA4u4cufmkApIHS3bVJ6jtwk1UBb6JQb2JsoiNP7x3mw9dHGPaDrL6ZUPeDAQ==
+            </X509Certificate>
+        </X509Data>
+    </KeyInfo>
+    <Object>
+        <bankIdSignedData xmlns="http://www.bankid.com/signature/v1.0.0/types" Id="bidSignedData">
+            <usrVisibleData charset="UTF-8" visible="wysiwys">SSBoZXJlYnkgc2lnbiBhbmQgYWNjZXB0IHRoZSBjb250ZW50cyBpbiB0aGUgUERGIGZpbGUgYW5kIGFsbCBhZ3JlZW1lbnRzIHRoZXJlaW4=</usrVisibleData>
+            <usrNonVisibleData>MDY5NTNkNGFiMjMwMzY4MTQxNmUwZjkwZTY5NTE4Yzg3MTA3MDY3Y2E1NmQ3NjJjMDc0NzU1ZDdkNjY5ZGY5Zg==</usrNonVisibleData>
+            <srvInfo>
+                <name>Y249U3ZlbnNrIGUtaWRlbnRpdGV0IEFCLG5hbWU9U3ZlbnNrIGUtaWRlbnRpdGV0IEFCLHNlcmlhbE51bWJlcj01NTY3NzY2OTkyLG89U3dlZGJhbmsgQUIgKHB1YmwpLGM9U0U=</name>
+                <nonce>zdWxBMIjfkVR0/y/lO5fU2i1zI8=</nonce>
+                <displayName>U3ZlbnNrIGUtaWRlbnRpdGV0IEFC</displayName>
+            </srvInfo>
+            <clientInfo>
+                <funcId>Signing</funcId>
+                <version>Ny4yOS4w</version>
+                <env>
+                    <ai>
+                        <type>QU5EUk9JRA==</type>
+                        <deviceInfo>MTE=</deviceInfo>
+                        <uhi>O6D69cK3ddcfmqIeijKlkeiHPzc=</uhi>
+                        <fsib>0</fsib>
+                        <utb>cs1</utb>
+                        <requirement>
+                            <condition>
+                                <type>CertificatePolicies</type>
+                                <value>1.2.752.78.1.5</value>
+                            </condition>
+                        </requirement>
+                        <uauth>pw</uauth>
+                        <token>qr-start-token</token>
+                    </ai>
+                </env>
+            </clientInfo>
+        </bankIdSignedData>
+    </Object>
+</Signature>
